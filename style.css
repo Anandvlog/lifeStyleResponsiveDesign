@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Marcellus", serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+a {
+    text-decoration: none;
+
+}
+
+.container-max {
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.nav_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 10px;
+}
+
+.nav_header .logo {
+    width: 35px;
+    height: 35px;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #111;
+    border-radius: 50%;
+}
+
+.menu_list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.menu_list li a {
+    color: #000;
+    font-size: 16px;
+    font-size: 500;
+}
+
+.top_heading h2 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.top_heading p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.top_heading {
+    margin-bottom: 30px;
+}
+
+
+/* ==========================
+        GRID
+========================== */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-bottom: 60px;
+}
+
+/* first card */
+
+.large {
+    grid-column: span 2;
+    height: 340px;
+}
+
+/* last card */
+
+.wide {
+    grid-column: span 2;
+}
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 340px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+/* overlay */
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, .25),
+            rgba(0, 0, 0, .15),
+            rgba(0, 0, 0, .35));
+}
+
+.overlay span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.overlay h2 {
+    color: #fff;
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.overlay button {
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    color: #0d7ddc;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.overlay button:hover {
+    background: #0d7ddc;
+    color: #fff;
+}
+
+
+
+/* ==========================
+   Tablet (992px)
+========================== */
+
+@media (max-width: 992px) {
+
+    .container,
+    .container-max {
+        padding: 0 20px;
+    }
+
+    .menu_list {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profile img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .large,
+    .wide {
+        grid-column: span 2;
+    }
+}
+
+
+/* ==========================
+   Mobile (768px)
+========================== */
+
+@media (max-width: 768px) {
+
+    .nav_header {
+        /* flex-direction: column; */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .menu_list {
+         width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        display: none;
+    }
+     .menu_list li{
+         width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .profile img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .top_heading {
+        text-align: center;
+    }
+
+    .top_heading h2 {
+        font-size: 30px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .large,
+    .wide {
+        grid-column: span 1;
+    }
+
+    .card {
+        height: 320px;
+    }
+
+    .overlay h2 {
+        font-size: 26px;
+    }
+}
+
+
+/* ==========================
+   Small Mobile
+========================== */
+
+@media (max-width: 480px) {
+
+    .container,
+    .container-max {
+        padding: 0 15px;
+    }
+
+    .nav_header {
+        padding: 20px 0;
+    }
+
+    .menu_list {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .profile img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .card {
+        height: 260px;
+        border-radius: 15px;
+    }
+
+    .overlay {
+        padding: 16px;
+    }
+
+    .overlay h2 {
+        font-size: 22px;
+    }
+
+    .overlay button {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .top_heading h2 {
+        font-size: 28px;
+    }
+
+    .top_heading p {
+        font-size: 15px;
+    }
+}

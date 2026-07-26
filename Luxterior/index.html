@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxterior</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="wrap nav-row">
+        <div class="logo">Luxterior</div>
+        <nav class="links">
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#studio">Studio</a>
+            </li>
+            <li>
+              <a href="#about"> About</a>
+            </li>
+            <li>
+              <a href="#features"> Features </a>
+            </li>
+            <li>
+              <a href="#Contacts"> Contacts </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-cta">
+          <a href="#contact" class="btn">Start a project</a>
+          <div class="menu-icon">☰</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero_section w-screen h-screen bg-white overflow-hidden">
+      <div class="relative w-full h-full max-w-[1700px] mx-auto">
+        <!-- Background Image -->
+        <div
+          class="absolute top-5 right-8 w-[72%] h-[82%] bg-center bg-cover"
+          style="
+            background-image: url(&quot;https://plus.unsplash.com/premium_photo-1670360414483-64e6d9ba9038?q=80&w=1170&auto=format&fit=crop&quot;);
+          "
+        ></div>
+
+        <!-- Decorative Square -->
+        <div
+          class="absolute bottom-14 left-[22%] w-[130px] h-[130px] border-2 border-zinc-500"
+        ></div>
+
+        <!-- Content Box -->
+        <div
+          class="absolute top-[16%] left-0 w-[36%] bg-zinc-400 text-white px-16 py-16"
+        >
+          <h1 class="text-5xl font-bold leading-tight">
+            We help you make <br />
+            modern interior
+          </h1>
+
+          <p class="mt-8 text-lg leading-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est
+            illum ut minus? Suscipit in voluptate maxime recusandae distinctio
+            dignissimos.
+          </p>
+        </div>
+
+        <!-- Slide Number -->
+        <div
+          class="absolute right-8 top-1/2 -translate-y-1/2 flex flex-col items-center gap-5 text-zinc-300"
+        >
+          <span class="text-3xl">01</span>
+
+          <div class="w-[2px] h-28 bg-zinc-300"></div>
+
+          <span class="text-3xl">05</span>
+        </div>
+
+        <!-- Arrow Button -->
+        <div
+          class="absolute bottom-8 right-8 w-28 h-28 bg-zinc-400 rounded-md flex items-center justify-center cursor-pointer hover:bg-zinc-500 transition"
+        >
+          <i class="ri-arrow-down-line text-5xl"></i>
+        </div>
+      </div>
+    </section>
+
+<section class="py-20 bg-white">
+  <main class="max-w-7xl mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="flex items-center gap-6 mb-16">
+      <div class="w-20 h-[3px] bg-gray-700"></div>
+
+      <div>
+        <h2 class="text-4xl font-bold leading-tight">
+          Benefits you get when
+        </h2>
+        <h2 class="text-4xl font-bold leading-tight">
+          using our website
+        </h2>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="flex flex-col md:flex-row justify-between gap-10">
+
+      <!-- Card 1 -->
+      <div
+        class="flex items-start gap-6 p-6 rounded-lg hover:shadow-xl transition duration-300">
+
+        <i class="ri-award-line text-4xl text-gray-700"></i>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">
+            Best Quality
+          </h3>
+
+          <p class="text-gray-600 leading-7">
+            We provide premium quality furniture made from the finest materials
+            for long-lasting durability.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card 2 -->
+      <div
+        class="flex items-start gap-6 p-6 rounded-lg hover:shadow-xl transition duration-300">
+
+        <i class="ri-truck-line text-4xl text-gray-700"></i>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">
+            Free Shipping
+          </h3>
+
+          <p class="text-gray-600 leading-7">
+            Get fast and secure delivery with free shipping on all eligible
+            orders across the country.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="flex items-start gap-6 p-6 rounded-lg hover:shadow-xl transition duration-300">
+
+        <i class="ri-customer-service-2-line text-4xl text-gray-700"></i>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">
+            24/7 Support
+          </h3>
+
+          <p class="text-gray-600 leading-7">
+            Our support team is available anytime to help you with your
+            questions and orders.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+</section>
+
+   
+    <script src="script.js"></script>
+  </body>
+</html>

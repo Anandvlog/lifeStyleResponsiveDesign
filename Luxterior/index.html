@@ -1,180 +1,250 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxterior</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="wrap nav-row">
-        <div class="logo">Luxterior</div>
-        <nav class="links">
-          <ul>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#studio">Studio</a>
-            </li>
-            <li>
-              <a href="#about"> About</a>
-            </li>
-            <li>
-              <a href="#features"> Features </a>
-            </li>
-            <li>
-              <a href="#Contacts"> Contacts </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="nav-cta">
-          <a href="#contact" class="btn">Start a project</a>
-          <div class="menu-icon">☰</div>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-body">
+    <main class="hero-section">
+        <div class="hero-wrapper">
+            <div class="hero-bg-layer">
+                <div class="hero-box-container">
+                    <div class="hero-box"></div>
+                </div>
+                <div class="hero-image"></div>
+            </div>
+
+            <div class="hero-content-layer">
+                <nav class="navbar">
+                    <h1 class="logo">Luxterior</h1>
+                    <div class="nav-links">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Features</a>
+                        <a href="#">Contacts</a>
+                    </div>
+                    <div class="nav-icons">
+                        <i class="ri-global-line "></i>
+                        <i class="ri-align-justify "></i>
+                    </div>
+                </nav>
+
+                <div class="hero-mid">
+                    <div class="hero-text-box">
+                        <h1 class="hero-title">We help you make modern interior</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est illum ut minus? Suscipit in
+                            voluptate maxime recusandae distinctio dignissimos.</p>
+                    </div>
+                    <div class="hero-pagination">
+                        <div class="pagination-number">01</div>
+                        <div class="pagination-line"></div>
+                        <div class="pagination-number">05</div>
+                    </div>
+                </div>
+
+                <div class="hero-scroll-row">
+                    <div class="hero-scroll-btn">
+                        <i class="ri-arrow-down-line scroll-icon"></i>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </header>
+    </main>
 
-    <section class="hero_section w-screen h-screen bg-white overflow-hidden">
-      <div class="relative w-full h-full max-w-[1700px] mx-auto">
-        <!-- Background Image -->
-        <div
-          class="absolute top-5 right-8 w-[72%] h-[82%] bg-center bg-cover"
-          style="
-            background-image: url(&quot;https://plus.unsplash.com/premium_photo-1670360414483-64e6d9ba9038?q=80&w=1170&auto=format&fit=crop&quot;);
-          "
-        ></div>
+    <main class="benefits-section">
+        <div class="benefits-header">
+            <div class="benefits-header-line"></div>
+            <div>
+                <h1 class="benefits-title">Benefits you get when</h1>
+                <h1 class="benefits-title">using our website</h1>
+            </div>
+        </div>
+        <div class="benefits-list">
+            <div class="benefit-item">
+                <i class="ri-truck-line benefit-icon"></i>
+                <div>
+                    <h2 class="benefit-title">Best Quality</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, sed.</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <i class="ri-truck-line benefit-icon"></i>
+                <div class="benefit-text">
+                    <h2 class="benefit-title">Best Quality</h2>
+                    <p class="benefit-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, sed.
+                    </p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <i class="ri-truck-line benefit-icon"></i>
+                <div class="benefit-text">
+                    <h2 class="benefit-title">Best Quality</h2>
+                    <p class="benefit-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, sed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
 
-        <!-- Decorative Square -->
-        <div
-          class="absolute bottom-14 left-[22%] w-[130px] h-[130px] border-2 border-zinc-500"
-        ></div>
+    <main class="experience-section">
+        <div class="experience-image"></div>
+        <div class="experience-content">
+            <h1 class="experience-title">We provide you the</h1>
+            <h1 class="experience-title experience-title--sub">best experience</h1>
+            <p class="experience-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil natus eum quaerat
+                harum ratione dolor corporis maxime expedita unde ipsum reprehenderit ullam corrupti, nesciunt nobis qui
+                error. Sint, possimus ullam?</p>
+            <div class="experience-stats">
+                <div>
+                    <h1 class="stat-number">17</h1>
+                    <p class="stat-label">Loremtyuio, ipsum.</p>
+                </div>
+                <div>
+                    <h1 class="stat-number">23</h1>
+                    <p class="stat-label">Loremtyuio, ipsum.</p>
+                </div>
+                <div>
+                    <h1 class="stat-number">598</h1>
+                    <p class="stat-label">Loremtyuio, ipsum.</p>
+                </div>
+            </div>
+            <button class="experience-btn">Lorem, ipsum. --></button>
+        </div>
+    </main>
 
-        <!-- Content Box -->
-        <div
-          class="absolute top-[16%] left-0 w-[36%] bg-zinc-400 text-white px-16 py-16"
-        >
-          <h1 class="text-5xl font-bold leading-tight">
-            We help you make <br />
-            modern interior
-          </h1>
+    <main class="process-section">
+        <div class="process-content">
+            <h2 class="process-title">We provide the best process experience</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <button class="process-step-number">01</button>
+                    <h1 class="process-step-title">Briefing</h1>
+                    <p >Lorem assumenda voluptatem soluta non doloribus quia modi repellendus.
+                        Et, adipisci aspernatur ex velit animi officiis eius culpa! Placeat ipsa sapiente itaque?</p>
+                </div>
+                <div class="process-step process-step--short">
+                    <button class="process-step-number">02</button>
+                    <h1 class="process-step-title">Processing</h1>
+                    <p >voluptatem solunatur ex velit animi officiis eius culpa! Placeat ipsa
+                        sapiente itaque?</p>
+                </div>
+                <div class="process-step process-step--short process-step--last">
+                    <button class="process-step-number">03</button>
+                    <h1 class="process-step-title">Finishing</h1>
+                    <p >luptatem soluta non doloribus quia modi repellendus. Et, adipisci
+                        aspernatur ex velit animi officiis eius culpa! Placeat ipsa sapiente itaque?</p>
+                </div>
+            </div>
+        </div>
+        <div class="process-image"></div>
+    </main>
 
-          <p class="mt-8 text-lg leading-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est
-            illum ut minus? Suscipit in voluptate maxime recusandae distinctio
-            dignissimos.
-          </p>
+    <main class="testimonials-section">
+        <h1 class="testimonials-title">We our customers are saying</h1>
+        <div class="testimonials-list">
+            <div class="testimonial-card">
+                <h1 class="testimonial-icon"><i class="ri-blaze-line"></i></h1>
+                <p class="testimonial-quote">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, quaerat?
+                </p>
+                <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ipsa
+                    labore? Voluptatem, facilis est dolorem sequi corrupti cupiditate!</p>
+                <div class="testimonial-author-row">
+                    <div class="testimonial-avatar testimonial-avatar--1"></div>
+                    <div class="testimonial-author-info">
+                        <p class="testimonial-author-name">Dr. Patel</p>
+                        <p >Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <h1 class="testimonial-icon"><i class="ri-blaze-line"></i></h1>
+                <p class="testimonial-quote">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, quaerat?
+                </p>
+                <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ipsa
+                    labore? Voluptatem, facilis est dolorem sequi corrupti cupiditate!</p>
+                <div class="testimonial-author-row">
+                    <div class="testimonial-avatar testimonial-avatar--2"></div>
+                    <div class="testimonial-author-info">
+                        <p class="testimonial-author-name">Sarang Kale</p>
+                        <p >Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- Slide Number -->
-        <div
-          class="absolute right-8 top-1/2 -translate-y-1/2 flex flex-col items-center gap-5 text-zinc-300"
-        >
-          <span class="text-3xl">01</span>
-
-          <div class="w-[2px] h-28 bg-zinc-300"></div>
-
-          <span class="text-3xl">05</span>
+        <div class="newsletter">
+            <h2 class="newsletter-title">Subscribe to get the Latest</h2>
+            <h2 class="newsletter-title newsletter-title--sub">news about us</h2>
+            <p class="newsletter-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolore fugit
+                maxime deserunt blanditiis adipisci, placeat similique </p>
+            <div class="newsletter-form">
+                <input type="text" class="newsletter-input" placeholder="Enter your email address">
+                <button class="newsletter-btn">Subscribe</button>
+            </div>
         </div>
+    </main>
 
-        <!-- Arrow Button -->
-        <div
-          class="absolute bottom-8 right-8 w-28 h-28 bg-zinc-400 rounded-md flex items-center justify-center cursor-pointer hover:bg-zinc-500 transition"
-        >
-          <i class="ri-arrow-down-line text-5xl"></i>
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <i class="ri-sketching footer-logo-icon"></i>
+            <p class="footer-tagline">Create honestly</p>
+            <p class="footer-copyright"> &copy 2008 - All Rights Reserved</p>
         </div>
-      </div>
-    </section>
+        <div class="footer-main">
+            <h2 class="footer-believe-title">We Believe</h2>
+            <p class="footer-quote"><span class="footer-quote-text">"The key to building an Authentik business is
+                    building an authentic life."</span> - Brian Gardner</p>
 
-<section class="py-20 bg-white">
-  <main class="max-w-7xl mx-auto px-6">
+            <div class="footer-columns">
+                <div class="footer-col-group">
+                    <div class="footer-col">
+                        <h3 class="footer-col-title">About</h3>
+                        <a href="#" class="footer-link">WhatsApp</a>
+                        <a href="#" class="footer-link">LinkdIn</a>
+                        <a href="#" class="footer-link">Facebook</a>
+                        <a href="#" class="footer-link">Instagram</a>
+                    </div>
+                    <div class="footer-legal-link-wrap">
+                        <a href="#" class="footer-legal-link">Terms &amp; Conditions</a>
+                    </div>
+                </div>
 
-    <!-- Heading -->
-    <div class="flex items-center gap-6 mb-16">
-      <div class="w-20 h-[3px] bg-gray-700"></div>
+                <div class="footer-col-group">
+                    <div class="footer-col">
+                        <h3 class="footer-col-title">Services</h3>
+                        <a href="#" class="footer-link">Feedback</a>
+                        <a href="#" class="footer-link">Terms &amp; Conditions</a>
+                        <a href="#" class="footer-link">Privacy</a>
+                        <a href="#" class="footer-link">Agreement</a>
+                    </div>
+                    <div>
+                        <a href="#" class="footer-legal-link">Privacy Policy</a>
+                    </div>
+                </div>
 
-      <div>
-        <h2 class="text-4xl font-bold leading-tight">
-          Benefits you get when
-        </h2>
-        <h2 class="text-4xl font-bold leading-tight">
-          using our website
-        </h2>
-      </div>
-    </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Resourses</h3>
+                    <a href="#" class="footer-link">Feedback</a>
+                    <a href="#" class="footer-link">Terms &amp; Conditions</a>
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Agreement</a>
+                </div>
 
-    <!-- Cards -->
-    <div class="flex flex-col md:flex-row justify-between gap-10">
-
-      <!-- Card 1 -->
-      <div
-        class="flex items-start gap-6 p-6 rounded-lg hover:shadow-xl transition duration-300">
-
-        <i class="ri-award-line text-4xl text-gray-700"></i>
-
-        <div>
-          <h3 class="text-xl font-semibold mb-3">
-            Best Quality
-          </h3>
-
-          <p class="text-gray-600 leading-7">
-            We provide premium quality furniture made from the finest materials
-            for long-lasting durability.
-          </p>
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Contact</h3>
+                    <a href="#" class="footer-link">Feedback</a>
+                    <a href="#" class="footer-link">Terms &amp; Conditions</a>
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Agreement</a>
+                </div>
+            </div>
         </div>
+    </footer>
+</body>
 
-      </div>
-
-      <!-- Card 2 -->
-      <div
-        class="flex items-start gap-6 p-6 rounded-lg hover:shadow-xl transition duration-300">
-
-        <i class="ri-truck-line text-4xl text-gray-700"></i>
-
-        <div>
-          <h3 class="text-xl font-semibold mb-3">
-            Free Shipping
-          </h3>
-
-          <p class="text-gray-600 leading-7">
-            Get fast and secure delivery with free shipping on all eligible
-            orders across the country.
-          </p>
-        </div>
-
-      </div>
-
-      <!-- Card 3 -->
-      <div
-        class="flex items-start gap-6 p-6 rounded-lg hover:shadow-xl transition duration-300">
-
-        <i class="ri-customer-service-2-line text-4xl text-gray-700"></i>
-
-        <div>
-          <h3 class="text-xl font-semibold mb-3">
-            24/7 Support
-          </h3>
-
-          <p class="text-gray-600 leading-7">
-            Our support team is available anytime to help you with your
-            questions and orders.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </main>
-</section>
-
-   
-    <script src="script.js"></script>
-  </body>
 </html>
